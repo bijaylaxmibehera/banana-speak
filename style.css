@@ -1,18 +1,74 @@
-textarea{
-    width: 70%;
-    height: 20vh;
-    display: block;
-    margin: 1rem;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+:root{
+    --primary-color:#edc01f;
+    --dark-gray:rgb(82, 81, 81);
+
+}
+*{
+   box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+    font-size: 1rem;
+}
+main{
+    margin: auto;
     padding: 1rem;
+    max-width: 700px;
+}
+
+textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+button {
+    background-color: var(--primary-color);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-size: large;
+}
+button:hover {
+    background-color: white;
+    border: 3px solid var(--primary-color);
+    cursor: pointer;
 }
 div{
     font-size: larger;
 }
 #output{
-    border: 1px solid black;
-    width: 70%;
-    height: 20vh;
-    display: block;
-    margin: 1rem;
-    padding: 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 10vh;
+        max-height: 20vh;
+        overflow: scroll;
+        border: 1px solid var(--dark-gray);
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
